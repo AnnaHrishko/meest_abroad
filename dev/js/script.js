@@ -5,9 +5,9 @@ $('#copy').click(function(){
 })
 
 $('.country_but').click(function(){
-   let index = $(this).attr("data-page") 
+   let index = $(this).attr("data-tag") 
    $(".default_tab").fadeOut(0)
-   $('.tab' + index).fadeIn(200)
+   $('.tab' + index).fadeIn(200).css('display', 'flex');
    $('.country_but').removeClass('active')
    $(this).addClass('active')
    return false
